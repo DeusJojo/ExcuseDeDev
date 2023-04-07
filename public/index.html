@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="shortcut icon" href="#" />
+
+    <title>Excuse de dev</title>
+  </head>
+  <body>
+    <div class="loader-container hidden">
+      <div class="loader"></div>
+    </div>
+
+    <h1 id="title">Excuses de dev</h1>
+    <!-- Div affichant l'excuse -->
+    <div id="excuse"></div>
+    <!-- Affiche l'excuse en cliquant sur le bouton -->
+    <button id="generer" class="bouton hide">Générer une excuse</button>
+
+    <button
+      type="button"
+      class="bouton hide"
+      data-bs-toggle="modal"
+      data-bs-target="#addExcuseModal"
+    >
+      Nouvelle excuse
+    </button>
+
+    <div
+      class="modal fade"
+      id="addExcuseModal"
+      tabindex="-1"
+      aria-labelledby="addExcuseModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="addExcuseModalLabel">
+              Nouvelle excuse
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="excuseInput" class="col-form-label">Excuse:</label>
+                <input type="text" class="form-control" id="excuseInput" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Fermer
+            </button>
+            <button type="button" id="valider" class="btn btn-primary">
+              Valider
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/jquery-3.6.4.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.mjs" type="module"></script>
+  </body>
+</html>
