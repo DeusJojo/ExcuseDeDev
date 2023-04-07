@@ -13,7 +13,7 @@ Excuses de dev est un générateur de phrases pour faire patienter les utilisate
 -- Comment installer et exécuter le projet -- 
 
  Pour utiliser le projet il est nécessaire d'installer Nodejs et d'ajouter Express.js comme dépendance ("npm install express").
- Pour exécuter le projet il suffit de taper la commande "node app.mjs" dans le terminal.
+ Pour exécuter le projet il suffit de taper la commande "node app.mjs" dans le terminal, depuis le répertoire du fichier.
 
 -- Comment utiliser le projet --
 
