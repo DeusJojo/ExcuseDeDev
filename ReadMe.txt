@@ -28,7 +28,7 @@ Route "/lost" :
 La page "/lost" affiche un titre et un gif. Au bout de 5 secondes l'utilisateur est redirigé vers la page principale "/".
 
 Route "/$http_code":
-L'utilisateur peut entrer un http_code correspondatn à une excuse. Le message correspondant au http_code s'affichera à l'écran.
+L'utilisateur peut entrer un http_code correspondant à une excuse. Le message correspondant au http_code s'affichera à l'écran.
 
 Les autres routes :
 Une page d'erreur 404 s'affiche si l'utilisateur se dirige vers une page non définie.
@@ -39,6 +39,6 @@ Une page d'erreur 404 s'affiche si l'utilisateur se dirige vers une page non dé
 Pour vérifier qu'une excuse n'est jamais générée deux fois de suite il suffit de réduire le tableau à deux éléments et de tester 
 l'application.
 
-Pour vérifier qu'une nouvelle excuse est bien enregistrer dans le tableau lors de l'ajout vous pouvez faire un "console.log()"
+Pour vérifier qu'une nouvelle excuse est bien enregistrée dans le tableau lors de l'ajout vous pouvez faire un "console.log()"
 du tableau.
 
